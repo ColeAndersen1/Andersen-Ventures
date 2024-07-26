@@ -22,9 +22,8 @@ header {
 }
 
 header img {
-    max-width: 150px; /* Adjust the size as needed */
+    max-width: 100px; /* Adjust the size to be smaller */
     height: auto;
-    margin: 0;
 }
 
 /* Intro Section */
@@ -33,7 +32,7 @@ header img {
     color: #fff; /* White text color */
     padding: 40px 20px;
     text-align: left; /* Align text to the left */
-    margin-left: 10px; /* Offset text from the left border */
+    margin-left: 20px; /* Offset text from the left border */
 }
 
 .intro h1 {
@@ -145,7 +144,7 @@ footer {
     }
 
     header img {
-        max-width: 100px; /* Adjust for smaller screens if needed */
+        max-width: 80px; /* Adjust for smaller screens if needed */
     }
 
     .intro {
