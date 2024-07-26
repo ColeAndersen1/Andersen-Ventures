@@ -1,35 +1,191 @@
-body, html {
+/* Reset some default styles */
+body, h1, h2, p, a {
     margin: 0;
     padding: 0;
-    height: 100%;
+    font-family: Arial, sans-serif;
+    text-decoration: none; /* Remove underlines from links */
 }
 
-.container {
-    position: relative;
-    height: 100vh;
+/* Basic layout */
+body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/AVBackground.gif') center/cover no-repeat;
-    filter: blur(8px);
-    z-index: -1;
+header {
+    background-color: #000; /* Black background color */
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Intro Section */
+.intro {
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+/* What We Do Section */
+.what-we-do {
+    background-color: #fff; /* White background color */
+    color: #000; /* Black text color */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.what-we-do h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.what-we-do .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service {
+    flex: 1;
+    padding: 10px;
+}
+
+.service h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1em;
+}
+
+/* Main content */
+main {
+    flex: 1;
 }
 
 .content {
+    padding: 20px;
     text-align: center;
-    z-index: 1;
 }
 
 h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-left img {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.footer-left p {
+    margin-top: 10px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-right a {
     color: #fff;
-    font-size: 3rem;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 5px;
+    }
+
+    .intro h1 {
+        font-size: 1.8em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .what-we-do h1 {
+        font-size: 2em;
+    }
+
+    .what-we-do .subtitle {
+        font-size: 1em;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+    .content h1 {
+        font-size: 1.5em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        margin-bottom: 20px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
