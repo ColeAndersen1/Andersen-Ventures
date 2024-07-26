@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-    max-width: 100px; /* Adjust the size to be smaller */
+    max-width: 20vw; /* Responsive width relative to viewport width */
     height: auto;
 }
 
@@ -118,7 +118,7 @@ footer {
 }
 
 .footer-left img {
-    max-width: 150px; /* Adjust the size as needed */
+    max-width: 20vw; /* Responsive width relative to viewport width */
     height: auto;
 }
 
@@ -144,7 +144,7 @@ footer {
     }
 
     header img {
-        max-width: 80px; /* Adjust for smaller screens if needed */
+        max-width: 30vw; /* Adjust for smaller screens if needed */
     }
 
     .intro {
