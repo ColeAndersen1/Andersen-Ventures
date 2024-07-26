@@ -16,14 +16,15 @@ body {
 header {
     background-color: #000; /* Black background color */
     padding: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    justify-content: flex-start; /* Align logo to the left */
 }
 
 header img {
-    max-width: 100%;
+    max-width: 150px; /* Adjust the size as needed */
     height: auto;
-    display: block;
-    margin: 0 auto;
+    margin: 0;
 }
 
 /* Intro Section */
@@ -31,7 +32,8 @@ header img {
     background-color: #000; /* Black background color */
     color: #fff; /* White text color */
     padding: 40px 20px;
-    text-align: center;
+    text-align: left; /* Align text to the left */
+    margin-left: 10px; /* Offset text from the left border */
 }
 
 .intro h1 {
@@ -140,6 +142,15 @@ footer {
 @media (max-width: 768px) {
     header {
         padding: 5px;
+    }
+
+    header img {
+        max-width: 100px; /* Adjust for smaller screens if needed */
+    }
+
+    .intro {
+        padding: 20px 10px;
+        margin-left: 0; /* Remove left margin on smaller screens */
     }
 
     .intro h1 {
