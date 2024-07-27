@@ -122,7 +122,7 @@ footer {
     color: #fff; /* White text color */
     display: flex;
     justify-content: space-between;
-    padding: 50px 30px; /* Increase padding above and below */
+    padding: 30px 20px; /* Increase padding above and below */
     align-items: flex-end; /* Align items to the bottom */
 }
 
