@@ -15,71 +15,85 @@ body {
 
 header {
     background-color: #000; /* Black background color */
-    padding: 10px;
+    padding: 10px 30px; /* Adjust padding to move image slightly higher */
     display: flex;
     align-items: center; /* Center logo vertically */
-    justify-content: flex-start; /* Align logo to the left */
+    justify-content: center; /* Center logo horizontally */
 }
 
 header img {
-    max-width: 20vw; /* Responsive width relative to viewport width */
+    max-width: 25%; /* Adjust size as percentage of the viewport width */
     height: auto;
+    margin-right: auto; /* Push logo slightly towards the center */
 }
 
 /* Intro Section */
 .intro {
     background-color: #000; /* Black background color */
-    color: #fff; /* White text color */
-    padding: 40px 20px;
+    padding: 60px 20px 100px; /* Add more padding above the main headline */
     text-align: left; /* Align text to the left */
-    margin-left: 20px; /* Offset text from the left border */
+    color: #fff; /* Set text color to white */
+}
+
+.intro .intro-content {
+    margin-left: 5%; /* Reduce the left margin to 5% */
+}
+
+.intro h1, .intro p {
+    color: #fff; /* Ensure text color is white */
 }
 
 .intro h1 {
-    font-size: 2.5em;
+    font-size: 4em; /* Increase the font size slightly */
+    font-weight: bold; /* Make the text bold */
     margin-bottom: 10px;
 }
 
 .intro p {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin-top: 20px; /* Increase top margin for more padding below the main headline */
+    line-height: 1.5;
 }
 
 /* What We Do Section */
 .what-we-do {
     background-color: #fff; /* White background color */
     color: #000; /* Black text color */
-    padding: 40px 20px;
+    padding: 80px 20px; /* Increase padding above and below the section */
     text-align: center;
 }
 
 .what-we-do h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    font-weight: bold; /* Make the heading bold */
 }
 
 .what-we-do .subtitle {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1.5em; /* Increase font size */
+    margin-bottom: 20px; /* Decrease bottom margin to fit the text size */
+    white-space: pre-line; /* Allow line breaks in the text */
 }
 
 .services {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px; /* Decrease the gap between the columns */
 }
 
 .service {
     flex: 1;
-    padding: 10px;
+    padding: 20px; /* Increase padding inside each service */
 }
 
 .service h2 {
-    font-size: 1.5em;
+    font-size: 1.8em; /* Increase font size */
     margin-bottom: 10px;
 }
 
 .service p {
-    font-size: 1em;
+    font-size: 1.2em; /* Increase font size */
+    margin-bottom: 20px; /* Add bottom margin for padding */
 }
 
 /* Main content */
@@ -108,7 +122,8 @@ footer {
     color: #fff; /* White text color */
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 50px 30px; /* Increase padding above and below */
+    align-items: flex-end; /* Align items to the bottom */
 }
 
 .footer-left {
@@ -118,46 +133,55 @@ footer {
 }
 
 .footer-left img {
-    max-width: 20vw; /* Responsive width relative to viewport width */
+    max-width: 30%; /* Increase size as percentage of the viewport width */
     height: auto;
 }
 
 .footer-left p {
+    color: #fff;
     margin-top: 10px;
 }
 
 .footer-right {
     display: flex;
-    gap: 15px;
+    gap: 20px; /* Adjust spacing between links */
     align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping of links */
+    margin-top: -10px; /* Move links up by 10px */
 }
 
+/* Footer links */
 .footer-right a {
     color: #fff;
-    font-size: 1em;
+    font-size: 0.8em; /* Decrease font size */
+    font-weight: normal; /* Remove bold styling */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-        padding: 5px;
+        padding: 10px;
     }
 
     header img {
-        max-width: 30vw; /* Adjust for smaller screens if needed */
+        max-width: 25%; /* Adjust for smaller screens if needed */
     }
 
     .intro {
-        padding: 20px 10px;
+        padding: 40px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .intro .intro-content {
         margin-left: 0; /* Remove left margin on smaller screens */
     }
 
     .intro h1 {
-        font-size: 1.8em;
+        font-size: 3.5em; /* Adjust size for smaller screens */
     }
 
     .intro p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .what-we-do h1 {
@@ -188,14 +212,17 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px; /* Adjust padding for mobile */
     }
 
     .footer-left {
+        align-items: center; /* Center align image and text */
         margin-bottom: 20px;
     }
 
     .footer-right {
         flex-direction: column;
         gap: 10px;
+        justify-content: center; /* Center links */
     }
 }
