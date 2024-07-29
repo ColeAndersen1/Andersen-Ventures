@@ -118,6 +118,14 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            header {
+                padding: 1px; /* Decrease padding on mobile */
+            }
+
+            header img {
+                max-width: 60%; /* Increase logo size on mobile */
+            }
+
             footer {
                 flex-direction: column;
                 align-items: center;
@@ -127,6 +135,10 @@
             .footer-left {
                 align-items: center;
                 margin-bottom: 20px;
+            }
+
+            .footer-left img {
+                max-width: 80%; /* Increase logo size on mobile */
             }
 
             .footer-right {
