@@ -165,7 +165,7 @@ footer {
     }
 
     header img {
-        max-width: 25%; /* Adjust for smaller screens if needed */
+        max-width: 40%; /* Adjust for smaller screens if needed */
     }
 
     .intro {
@@ -219,7 +219,11 @@ footer {
         align-items: center; /* Center align image and text */
         margin-bottom: 20px;
     }
-
+    
+    .footer-left img {
+        max-width: 60%; /* Double the size from 30% to 60% */
+    }
+    
     .footer-right {
         flex-direction: column;
         gap: 10px;
