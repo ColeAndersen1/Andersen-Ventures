@@ -96,6 +96,48 @@ header img {
     margin-bottom: 20px; /* Add bottom margin for padding */
 }
 
+/* Our Focus Section */
+.our-focus {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 80px 20px; /* Spacing */
+    text-align: center; /* Center align text */
+}
+
+.our-focus h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.our-focus .focus-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Our Impact Section */
+.our-impact {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 80px 20px; /* Spacing */
+    text-align: center; /* Center align text */
+}
+
+.our-impact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.our-impact .impact-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 /* Main content */
 main {
     flex: 1;
@@ -161,15 +203,15 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-        padding: 1px;
+        padding: 10px;
     }
 
     header img {
-        max-width: 60%; /* Adjust for smaller screens if needed */
+        max-width: 25%; /* Adjust for smaller screens if needed */
     }
 
     .intro {
-        padding: 20px 10px; /* Adjust padding for smaller screens */
+        padding: 40px 10px; /* Adjust padding for smaller screens */
     }
 
     .intro .intro-content {
@@ -200,12 +242,13 @@ footer {
         margin-bottom: 20px;
     }
 
-    .content h1 {
-        font-size: 1.5em;
+    .our-focus h1, .our-impact h1 {
+        font-size: 2em;
     }
 
-    .content p {
-        font-size: 0.9em;
+    .our-focus .focus-text, .our-impact .impact-text {
+        font-size: 1em;
+        padding: 0 10px;
     }
 
     footer {
@@ -219,11 +262,7 @@ footer {
         align-items: center; /* Center align image and text */
         margin-bottom: 20px;
     }
-    
-    .footer-left img {
-        max-width: 80%; /* Double the size from 30% to 60% */
-    }
-    
+
     .footer-right {
         flex-direction: column;
         gap: 10px;
